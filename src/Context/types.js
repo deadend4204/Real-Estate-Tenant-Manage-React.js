@@ -1,0 +1,7 @@
+export const GET_PROPERTIES = "GET_PROPERTIES";
+export const GET_TENANTS = "GET_TENANTS";
+export const EDIT_TENANTS = "EDIT_TENANTS";
+export const ADD_TENANTS = "ADD_TENANTS";
+export const DELETE_TENANTS = "DELETE_TENANTS";
+export const SET_EDIT_TENANT = "SET_EDIT_TENANT";
+export const SET_CHOSEN_TENANT = "SET_CHOSEN_TENANT";
