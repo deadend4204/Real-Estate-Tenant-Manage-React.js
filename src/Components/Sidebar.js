@@ -12,21 +12,31 @@ import ListItemText from "@material-ui/core/ListItemText";
 import AddBox from "@material-ui/icons/AddBox";
 import RealEstateContext from "../Context/realEstate/realEstateContext";
 
-const drawerWidth = 240;
-
 const useStyles = makeStyles((theme) => ({
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
   },
   drawer: {
-    width: drawerWidth,
+    width: "240px",
     flexShrink: 0,
+    [theme.breakpoints.down("sm")]: {
+      width: "150px",
+    },
   },
+
   drawerPaper: {
-    width: drawerWidth,
+    width: "240px",
+    [theme.breakpoints.down("sm")]: {
+      width: "150px",
+    },
   },
   drawerContainer: {
     overflow: "auto",
+  },
+  menuText: {
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1rem",
+    },
   },
 }));
 
@@ -62,7 +72,9 @@ export default function Sidebar({ tenantModal }) {
               <ListItemIcon>
                 <AddBox />
               </ListItemIcon>
-              <ListItemText primary="Add Tenant" />
+              <ListItemText>
+                <Typography className={classes.menuText}>Add Tenant</Typography>
+              </ListItemText>
             </ListItem>
           </List>
         </div>
