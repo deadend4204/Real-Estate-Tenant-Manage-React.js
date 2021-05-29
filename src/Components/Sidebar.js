@@ -44,7 +44,7 @@ export default function Sidebar({ tenantModal }) {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" noWrap>
-            Chat App
+            Tenant Manager
           </Typography>
         </Toolbar>
       </AppBar>
